@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFontCenturyGothic from "next/font/local"
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,10 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const centuryGothic = localFontCenturyGothic({
+  src: "../../public/fonts/centurygothic.ttf"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
