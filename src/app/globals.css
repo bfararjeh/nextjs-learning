@@ -7,21 +7,49 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1a1a;
     --foreground: #ededed;
   }
 }
 
 @font-face {
   font-family: centGoth;
-  src: url("fonts/centurygothic.ttf");
+  src: url("/fonts/centurygothic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: centGoth;
+  src: url("/fonts/centurygothic_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
 }
 
 @theme {
   --font-centgoth: centGoth, "sans-serif"
 }
 
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+header {
+  background-color: #4400ff;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 10px;
+  font-size: 2.5rem;
 }
