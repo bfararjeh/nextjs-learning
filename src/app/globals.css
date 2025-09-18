@@ -27,12 +27,26 @@
 }
 
 @theme {
-  --font-centgoth: centGoth, "sans-serif"
+  --font-centgoth: centGoth, "sans-serif";
+  --color-fararjeh: #4400ff;
+  --color-fararjeh-dim: #3700cf;
 }
 
 @layer utilities {
   .text-stroke {
     -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+
+  .text-stroke-thin {
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+
+  .text-stroke-thinnest {
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
