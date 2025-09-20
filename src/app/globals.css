@@ -34,7 +34,7 @@
 
 @layer utilities {
   .text-stroke {
-    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-width: 10px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
@@ -60,7 +60,7 @@ body {
 header {
   background-color: #4400ff;
   color: white;
-  padding: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items:center;
