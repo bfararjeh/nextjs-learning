@@ -3,15 +3,14 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const buttonClasses = "flex-1 flex items-center gap-3 font-centgoth font-bold justify-center text-stroke-thin text-3xl px-4 py-2 bg-fararjeh text-white transition hover:bg-gradient-to-b hover:from-fararjeh hover:to-fararjeh-dim hover:text-gray-200"
-
 export const metadata: Metadata = {
   title: "Fararjeh domain name",
   description: "Learning Next.js",
 };
 
-export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>)
-{
+export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>){
+  const buttonClasses = "flex-1 flex items-center gap-3 font-centgoth font-bold justify-center text-stroke-thin text-3xl px-4 py-2 bg-fararjeh text-white transition hover:bg-gradient-to-b hover:from-fararjeh hover:to-fararjeh-dim hover:text-gray-200"
+  
   return (
     <html lang="en">
       <body>
@@ -69,7 +68,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               Twitch</a>
           </nav>
         </header>
-        
         <div className={"m-8"}>{children}</div>
       </body>
     </html>
