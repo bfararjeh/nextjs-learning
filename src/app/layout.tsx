@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>){
-  const buttonClasses = "flex-1 flex items-center gap-3 font-centgoth font-bold justify-center text-stroke-thin text-3xl px-4 py-2 bg-fararjeh text-white transition hover:bg-gradient-to-b hover:from-fararjeh hover:to-fararjeh-dim hover:text-gray-200"
+  const buttonClasses = "flex-1 flex items-center gap-3 font-centgoth font-bold justify-center text-stroke-thin text-3xl px-4 py-2 bg-fararjeh text-white transition hover:bg-gradient-to-b hover:from-fararjeh hover:to-fararjeh-dim hover:text-gray-300"
   
   return (
     <html lang="en">
@@ -17,7 +17,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         <header className="flex flex-col">
           <div className="mb-10 flex items-center justify-center gap-6 drop-shadow-[0_0_3px_black]">
             <Image
-              src="/fararjeh.png"
+              src="/icons/fararjeh.png"
               alt="Site Icon"
               width={128}
               height={128}
