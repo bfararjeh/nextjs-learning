@@ -29,46 +29,49 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               Fararjeh
             </Link>
           </div>
+        </header>
 
+        <div>{children}</div>
+        
+        <footer>
           <nav className={"font-centgoth flex w-full justify-center"}>
-            <a
-              href="https://youtube.com/@fararjeh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={buttonClasses}
-            >
-              <Image src="/icons/youtube.png" alt="YouTube" width={48} height={48}/>
-              YouTube</a>
-              
-            <a
-              href="https://x.com/balfararjeh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={buttonClasses}
-            >
-              <Image src="/icons/twitter.png" alt="Twitter" width={48} height={48}/>
-              Twitter</a>
-
-            <a
-              href="https://metafy.gg/@fararjeh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={buttonClasses}
-            >
-              <Image src="/icons/metafy.png" alt="Metafy" width={48} height={48}/>
-              Metafy</a>
+              <a
+                href="https://youtube.com/@fararjeh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClasses}
+              >
+                <Image src="/icons/youtube.png" alt="YouTube" width={48} height={48}/>
+                YouTube</a>
+                
+              <a
+                href="https://x.com/balfararjeh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClasses}
+              >
+                <Image src="/icons/twitter.png" alt="Twitter" width={48} height={48}/>
+                Twitter</a>
 
               <a
-              href="https://twitch.tv/fararjeh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={buttonClasses}
-            >
-              <Image src="/icons/twitch.png" alt="Twitch" width={40} height={32}/>
-              Twitch</a>
+                href="https://metafy.gg/@fararjeh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClasses}
+              >
+                <Image src="/icons/metafy.png" alt="Metafy" width={48} height={48}/>
+                Metafy</a>
+
+                <a
+                href="https://twitch.tv/fararjeh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonClasses}
+              >
+                <Image src="/icons/twitch.png" alt="Twitch" width={40} height={32}/>
+                Twitch</a>
           </nav>
-        </header>
-        <div className={"m-8"}>{children}</div>
+        </footer>
       </body>
     </html>
   );
