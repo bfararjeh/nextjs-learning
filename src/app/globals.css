@@ -40,7 +40,7 @@
   }
 
   .text-stroke-thin {
-    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-width: 8px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
@@ -49,6 +49,28 @@
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
+  }
+}
+
+@layer base {
+  .header {
+    @apply font-centgoth font-bold text-4xl text-center;
+    filter: drop-shadow(0 0 2px black);
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+
+  .paragraph {
+    @apply font-centgoth text-xl text-center px-20;
+  }
+
+  .image {
+    @apply object-scale-down max-h-full drop-shadow-md rounded-xl m-auto;
+  }
+
+  .footerButton {
+    @apply flex-1 flex items-center gap-3 font-centgoth font-bold justify-center text-3xl px-4 py-2 bg-fararjeh text-white transition hover:bg-gradient-to-b hover:from-fararjeh hover:to-fararjeh-dim hover:text-gray-300;
   }
 }
 

@@ -4,7 +4,7 @@ export default function Home() {
       <div>
         <div className={'m-8 font-centgoth'}>
           <p> 
-            This is the youtube page.
+            This is the career page.
           </p>
         </div>
       </div>
