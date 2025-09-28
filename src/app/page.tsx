@@ -6,7 +6,6 @@ import Link from "next/link";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
-
   const opacity1 = useTransform(scrollYProgress, [0.1, 0.101], [0, 1]);
   const opacity2 = useTransform(scrollYProgress, [0.65, 0.651], [0, 1]);
 
