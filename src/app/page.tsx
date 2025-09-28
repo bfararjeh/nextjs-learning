@@ -39,7 +39,7 @@ export default function Home() {
       <div className="flex flex-col justify-between items-center px-12 py-20 gap-10">
         <motion.div style={{ opacity: opacity1 }} className="transition-opacity duration-700 flex">
           <Image
-            src="/home/fighting games.jpg"
+            src="/home/fighting-games.jpg"
             alt="FGC"
             width={750}
             height={750}
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
 
           <Image
-            src="/home/graduation picture.jpg"
+            src="/home/graduation-picture.jpg"
             alt="UOP"
             width={750}
             height={750}
