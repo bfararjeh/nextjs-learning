@@ -33,20 +33,26 @@
 }
 
 @layer utilities {
-  .text-stroke {
-    -webkit-text-stroke-width: 10px;
+  .text-stroke-thick {
+    -webkit-text-stroke-width: 12px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
 
-  .text-stroke-thin {
+  .text-stroke {
     -webkit-text-stroke-width: 8px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
 
-  .text-stroke-thinnest {
+  .text-stroke-thin {
     -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+
+  .text-stroke-thinnest {
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
@@ -55,7 +61,13 @@
 @layer base {
   .header {
     @apply font-centgoth font-bold text-4xl text-center;
-    filter: drop-shadow(0 0 2px black);
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+
+  .header-xl {
+    @apply font-centgoth font-bold text-7xl text-center;
     -webkit-text-stroke-width: 8px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
