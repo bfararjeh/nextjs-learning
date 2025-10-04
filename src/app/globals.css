@@ -1,15 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --foreground: #ededed;
-  }
+  --background: #1a1a1a;
+  --foreground: #ededed;
 }
 
 @font-face {
@@ -33,71 +26,86 @@
 }
 
 @layer utilities {
-  .text-stroke-thick {
-    -webkit-text-stroke-width: 12px;
-    -webkit-text-stroke-color: black;
-    paint-order: stroke fill;
-  }
-
   .text-stroke {
     -webkit-text-stroke-width: 8px;
-    -webkit-text-stroke-color: black;
-    paint-order: stroke fill;
-  }
-
-  .text-stroke-thin {
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: black;
-    paint-order: stroke fill;
-  }
-
-  .text-stroke-thinnest {
-    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
 }
 
 @layer base {
-  .header {
-    @apply font-centgoth font-bold text-4xl text-center;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: black;
-    paint-order: stroke fill;
+
+  .footerButton {
+    @apply flex-1 flex items-center gap-3 font-centgoth font-bold justify-center text-3xl px-4 py-2 bg-fararjeh text-white transition hover:bg-gradient-to-b hover:from-fararjeh hover:to-fararjeh-dim hover:text-gray-300;
+  }
+  
+  .image {
+    @apply max-h-full rounded-xl m-auto shadow-md;
   }
 
-  .header-xl {
+  h1 {
     @apply font-centgoth font-bold text-7xl text-center;
     -webkit-text-stroke-width: 8px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
 
-  .paragraph {
-    @apply font-centgoth text-xl text-center px-20;
+  h2 {
+    @apply font-centgoth font-bold text-4xl text-center;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+  
+  p {
+    @apply font-centgoth text-xl text-center;
   }
 
-  .image {
-    @apply object-scale-down max-h-full drop-shadow-md rounded-xl m-auto;
+  section {
+    @apply flex flex-col justify-between items-center py-20;
   }
 
-  .footerButton {
-    @apply flex-1 flex items-center gap-3 font-centgoth font-bold justify-center text-3xl px-4 py-2 bg-fararjeh text-white transition hover:bg-gradient-to-b hover:from-fararjeh hover:to-fararjeh-dim hover:text-gray-300;
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+  }
+  
+  header {
+    @apply bg-[#4400ff] pt-8 flex justify-center items-center gap-2.5;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
+#sidebar {
+  @apply font-centgoth font-bold text-xl tracking-wider
 }
 
-header {
-  background-color: #4400ff;
-  color: white;
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  gap: 10px;
-  font-size: 2.5rem;
+#backgroundL span {
+  z-index:-1;
+  opacity:.5;
+  background-color:#383838;
+  width:1px;
+  height:1450vh;
+  position:fixed;
+  top:0px;
+  transform: rotate(45deg); /* Rotate the line */
+  transform-origin: top left; /* Adjust rotation pivot */
+}
+
+#backgroundL span:nth-child(n) {
+  left: calc(10% * (n));
+}
+
+#backgroundR span {
+  z-index:-1;
+  opacity:.5;
+  background-color:#383838;
+  width:1px;
+  height:1450vh;
+  position:fixed;
+  top:0px;
+  transform: rotate(315deg); /* Rotate the line */
+  transform-origin: top left; /* Adjust rotation pivot */
+}
+
+#backgroundR span:nth-child(n) {
+  right: calc(10% * (n));
 }
