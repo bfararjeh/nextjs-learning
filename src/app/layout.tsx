@@ -19,12 +19,14 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
             <Image
               src="/icons/fararjeh.png"
               alt="Site Icon"
-              width={48}
-              height={48}
+              width={52}
+              height={52}
+              quality={100}
+              className="shadow-fararjeh-dim drop-shadow-md rounded-4xl"
             />
             <Link
               href="/"
-              className="font-centgoth font-bold text-5xl tracking-wide text-stroke"
+              className="font-centgoth font-bold text-5xl tracking-wider text-stroke"
             >
               Fararjeh
             </Link>
@@ -36,10 +38,12 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
 
         <main className="flex flex-row">
           <aside className="fixed w-64 max-w-72 flex flex-col top-0 h-screen justify-center items-center shrink-0">
-            <nav className="flex flex-col gap-4 mb-5">
-              <Link id="sidebar" href = "/content" className="text-center paragraph">Content</Link>
-              <Link id="sidebar" href = "/coaching" className="text-center paragraph">Coaching</Link>
-              <Link id="sidebar" href = "/competition" className="text-center paragraph">Competition</Link>
+            <nav className="flex flex-col gap-8 mb-5 ml-20">
+              <Link id="sidebar" href = "/" className="text-left">Home</Link>
+              <Link id="sidebar" href = "/content" className="text-left">Content</Link>
+              <Link id="sidebar" href = "/gallery" className="text-left">Gallery</Link>
+              <Link id="sidebar" href = "/coaching" className="text-left">Coaching</Link>
+              <Link id="sidebar" href = "/competition" className="text-left">Competition</Link>
             </nav>
           </aside>
 
