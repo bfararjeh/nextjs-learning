@@ -51,7 +51,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         </main>
         
         <footer className="mt-auto w-full">
-          <nav className={"font-centgoth flex w-full justify-center"}>
+          <nav className="font-centgoth flex w-full justify-center">
               <a
                 href="https://youtube.com/@fararjeh"
                 target="_blank"
