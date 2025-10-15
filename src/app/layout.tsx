@@ -45,7 +45,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               <Link id="sidebar" href = "#gallery" className="text-left">Gallery</Link>
             </nav>
           </aside>
-          <div className="px-[30rem] ml-[72px]">{children}</div>
+          <div className="px-[40rem] ml-[72px]">{children}</div>
         </main>
         
         <footer className="mt-auto w-full">
