@@ -1,14 +1,12 @@
 "use client";
 import Image from "next/image";
-import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import MasonryGallery from "../components/MasonryGallery";
+import { galleryImages } from "../lib/gallery";
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
-  const opacity1 = useTransform(scrollYProgress, [0.20, 0.201], [0, 1]);
-  const opacity2 = useTransform(scrollYProgress, [0.50, 0.501], [0, 1]);
-  const opacity3 = useTransform(scrollYProgress, [0.80, 0.801], [0, 1]);
 
   const reviews = [
     {
@@ -64,40 +62,34 @@ export default function Home() {
     }),
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
   return (
-    <main className="px-[30rem]">
-      <section id="about">
-        <Image
-          src="/home/showcase_1.png"
-          alt="showcase"
-          width={850}
-          height={850}
-          quality={100}
-          className="image border-2 border-gray-200 mb-10"
-        />
+    <div>
+      <main>
+        <section id="about">
+          <Image
+            src="/home/showcase_1.png"
+            alt="showcase"
+            width={850}
+            height={850}
+            className="image border-2 border-gray-200 mb-10"
+          />
 
-          <h1>Your Favourite Player's Favourite Player</h1>
-          <p className="mt-10">Analytical, pragmatic, and zealous, my name is Fararjeh, and I'm a competitor, content creator, and coach for Street Fighter 6.<br/><br/>Slowly carving my name in the stone of the UK greats, I'm on my way, getting better and better each year I compete all the while creating and publishing free intermediate to advanced level educational content. For those looking for something more personal, I also offer coaching; I can puzzle out your weaknesses before giving you a clear road to improving whether it be over a session or over a month with me as your personal trainer.</p>
+            <h1>Your Favourite Player's Favourite Player</h1>
+            <p className="mt-10">Analytical, pragmatic, and zealous, my name is Fararjeh, and I'm a competitor, content creator, and coach for Street Fighter 6.<br/><br/>Slowly carving my name in the stone of the UK greats, I'm on my way, getting better and better each year I compete all the while creating and publishing free intermediate to advanced level educational content. For those looking for something more personal, I also offer coaching; I can puzzle out your weaknesses before giving you a clear road to improving whether it be over a session or over a month with me as your personal trainer.</p>
 
-      </section>
-      <section id="achievements">
-        <motion.div style={{ opacity: opacity1 }} className="transition-opacity duration-700">
-        <h2 className="text-left mb-20">Achievements</h2>
-
+        </section>
+        <section id="achievements">
+          <h2 className="text-left mb-20">Achievements</h2>
           <div className="flex flex-row mb-10">
             <Image
               src="/home/fighting-games.jpg"
               alt="FGC"
               width={500}
               height={500}
-              quality={100}
               className="image"
             />
 
@@ -116,11 +108,11 @@ export default function Home() {
                   src="/results/KOTW24.png"
                   alt="CPT 2024"
                   fill
-                  quality={100}
+                  sizes="(max-width: 1024px) 100vw, 25vw"
                   className="object-cover"
                 />
 
-                <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/30">
+                <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20">
                   <p className="text-center">14/12/2024</p>
                 </div>
 
@@ -144,7 +136,7 @@ export default function Home() {
                   src="/results/BSC25.png"
                   alt="CPT 2024"
                   fill
-                  quality={100}
+                  sizes="(max-width: 1024px) 100vw, 25vw"
                   className="object-cover"
                 />
 
@@ -164,34 +156,6 @@ export default function Home() {
             </a>
 
             <a 
-            href="https://fightlab.challonge.com/iaa_33_sf6"
-            target="_blank"
-            rel="noopener noreferrer"> 
-              <div className="relative group aspect-square overflow-hidden rounded-2xl">
-                <Image
-                  src="/results/Meltdown25.png"
-                  alt="CPT 2024"
-                  fill
-                  quality={100}
-                  className="object-cover"
-                />
-
-                <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/30">
-                  <p className="text-center">26/08/2025</p>
-                </div>
-
-                <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex flex-col p-8 gap-10">
-                    <p className="font-bold text-3xl">1st</p>
-                    <p className="">I Am Arcade #33</p>
-                    <p className="font-bold text-xl text-white">Tier 3</p>
-                  </div>
-                </div>
-
-              </div>
-            </a>
-
-            <a 
             href="https://www.start.gg/tournament/ultimate-fighting-arena-2025-3/attendee/19095718"
             target="_blank"
             rel="noopener noreferrer"> 
@@ -200,12 +164,12 @@ export default function Home() {
                   src="/results/UFA25.png"
                   alt="CPT 2024"
                   fill
-                  quality={100}
+                  sizes="(max-width: 1024px) 100vw, 25vw"
                   className="object-cover"
                 />
 
-                <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20">
-                  <p className="text-center">11/10/2025</p>
+                <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10">
+                  <p className="text-center">11/09/2025</p>
                 </div>
 
                 <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -218,14 +182,38 @@ export default function Home() {
 
               </div>
             </a>
+
+            <a 
+            href="https://www.start.gg/tournament/evo-france-2025/event/street-fighter-6-ps5/entrant/21189173"
+            target="_blank"
+            rel="noopener noreferrer"> 
+              <div className="relative group aspect-square overflow-hidden rounded-2xl">
+                <Image
+                  src="/results/EVO25.png"
+                  alt="CPT 2024"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 25vw"
+                  className="object-cover"
+                />
+
+                <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10">
+                  <p className="text-center">10/10/2025</p>
+                </div>
+
+                <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex flex-col p-8 gap-10">
+                    <p className="font-bold text-3xl">33rd</p>
+                    <p className="">Evo Nice</p>
+                    <p className="font-bold text-xl text-white">Tier 1</p>
+                  </div>
+                </div>
+
+              </div>
+            </a>
           </div>
-
-        </motion.div>
-      </section>
-      <section id="coaching">
-        <motion.div style={{ opacity: opacity2 }} className="transition-opacity duration-700">
+        </section>
+        <section id="coaching">
           <h2 className="text-right mb-20">Get Coaching</h2>
-
           <div className="flex flex-row mb-10">
             <div className="bg-site-bg-dim self-center rounded-l-xl">
               <p className="py-10 px-10">Having been teaching for years with a professional background in teaching, my coaching is all about puzzling your biggest weaknesses, and then outlining a path for you to improve on them.<br/><br/> Whether you don't know your biggest weakness or think you do, my coaching is make you a stronger player, and you can take a look at some of my reviews here.</p>
@@ -236,7 +224,6 @@ export default function Home() {
               alt="Metafy"
               width={500}
               height={500}
-              quality={100}
               className="image"
             />
 
@@ -290,19 +277,15 @@ export default function Home() {
               />
             ))}
           </div>
-        </motion.div>
-      </section>
-      <section id="content">
-        <motion.div style={{ opacity: opacity3 }} className="transition-opacity duration-700">
+        </section>
+        <section id="content">
           <h2 className="text-left mb-20">Content Creation</h2>
-
           <div className="flex flex-row mb-10">
             <Image
               src="/home/sub-count-test.png"
               alt="Sub Counter"
               width={500}
               height={500}
-              quality={100}
               className="image"
             />
 
@@ -313,21 +296,27 @@ export default function Home() {
 
           <iframe
             src="https://www.eventhubs.com/news/2024/jul/31/how-demand-respect-sf6-gameplay/"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
             className="w-full h-[800px] border rounded-xl"
-            title="Embedded Page"
+            title="How to demand respect with your play in Street Fighter 6"
             loading="lazy"
           ></iframe>
-
-        </motion.div>
-      </section>
-      <div className="flex justify-center p-25">
-        <button
-          onClick={scrollToTop}
-          className=" bg-fararjeh text-white font-centgoth font-bold px-6 py-2 rounded-4xl hover:bg-fararjeh-dim transition"
-        >
-          Back to Top
-        </button>
-      </div>
-    </main>
+        </section>
+        <section id="gallery">
+          <h2 className="text-right mb-20">Gallery</h2>
+          <MasonryGallery images={galleryImages} />
+        </section>
+        <section id="return">
+          <div className="flex justify-center">
+            <button
+              onClick={scrollToTop}
+              className=" bg-site-bg-dim text-white font-centgoth font-bold px-6 py-2 rounded-xl hover:bg-neutral-800 transition border-white border-1"
+            >
+              Back to Top
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }

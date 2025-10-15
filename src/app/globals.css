@@ -46,25 +46,25 @@
   }
 
   h1 {
-    @apply font-centgoth font-bold text-7xl text-center;
+    @apply font-centgoth font-bold text-6xl text-center;
     -webkit-text-stroke-width: 8px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
 
   h2 {
-    @apply font-centgoth font-bold text-9xl text-left;
-    -webkit-text-stroke-width: 15px;
+    @apply font-centgoth font-bold text-8xl text-left;
+    -webkit-text-stroke-width: 12px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
   
   p {
-    @apply font-centgoth text-2xl text-center;
+    @apply font-centgoth text-xl text-center;
   }
 
   section {
-    @apply flex flex-col justify-between py-25;
+    @apply flex flex-col justify-between py-30;
   }
 
   body {

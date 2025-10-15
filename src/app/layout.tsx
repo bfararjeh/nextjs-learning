@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Fararjeh domain name",
-  description: "Learning Next.js",
+  title: "FGC Fararjeh",
+  description: "Fararjeh is a content creator, competitor, and coach for the game Street Fighter 6. Learn everything you need to know about him here!",
 };
 
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>){
@@ -21,7 +21,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               alt="Site Icon"
               width={52}
               height={52}
-              quality={100}
               className="shadow-fararjeh-dim drop-shadow-md rounded-4xl"
             />
             <Link
@@ -40,14 +39,13 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
           <aside className="fixed w-64 max-w-72 flex flex-col top-0 h-screen justify-center items-center shrink-0">
             <nav className="flex flex-col gap-8 mb-5 ml-20">
               <Link id="sidebar" href = "/" className="text-left">Home</Link>
-              <Link id="sidebar" href = "/content" className="text-left">Content</Link>
-              <Link id="sidebar" href = "/gallery" className="text-left">Gallery</Link>
-              <Link id="sidebar" href = "/coaching" className="text-left">Coaching</Link>
-              <Link id="sidebar" href = "/competition" className="text-left">Competition</Link>
+              <Link id="sidebar" href = "#achievements" className="text-left">Achievements</Link>
+              <Link id="sidebar" href = "#coaching" className="text-left">Coaching</Link>
+              <Link id="sidebar" href = "#content" className="text-left">Content</Link>
+              <Link id="sidebar" href = "#gallery" className="text-left">Gallery</Link>
             </nav>
           </aside>
-
-          <div className="ml-[200px]">{children}</div>
+          <div className="px-[30rem] ml-[72px]">{children}</div>
         </main>
         
         <footer className="mt-auto w-full">
@@ -85,7 +83,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
                 rel="noopener noreferrer"
                 className="footerButton text-stroke"
               >
-                <Image src="/icons/twitch.png" alt="Twitch" width={40} height={32}/>
+                <Image src="/icons/twitch.png" alt="Twitch" width={40} height={40}/>
                 Twitch</a>
           </nav>
         </footer>
