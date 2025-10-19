@@ -5,8 +5,6 @@ import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import MasonryGallery from "../components/MasonryGallery";
 import ReturnSubs from "../components/ReturnSubs";
-import InsertHeader from "../components/InsertHeader";
-import InsertFooter from "../components/InsertFooter"
 import { galleryImages } from "../lib/gallery";
 
 export default function Home() {
@@ -71,9 +69,8 @@ function scrollToTop() {
 
   return (
     <div>
-      <InsertHeader/>
       <main>
-        <div className="">
+        <div className="max-w-[96rem] mx-auto">
           <section id="about">
             <Image
               src="/home/showcase_1.png"
@@ -316,17 +313,18 @@ function scrollToTop() {
               title="How to demand respect with your play in Street Fighter 6"
               loading="lazy"
             ></iframe>
+
           </section>
 
 
 
 
-          <section id="gallery">
+          <section id="gallery" 
+          className="pb-0"
+          >
             <h2 className="text-center 2xl:text-right">Gallery</h2>
             <MasonryGallery images={galleryImages} />
           </section>
-
-
 
           <section id="return">
             <div className="flex justify-center">
@@ -338,11 +336,8 @@ function scrollToTop() {
               </button>
             </div>
           </section>
-
-
         </div>
       </main>
-      <InsertFooter/>
     </div>
   );
 }

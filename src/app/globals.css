@@ -30,7 +30,13 @@
 
 @layer utilities {
   .text-stroke {
-    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-width: 0.2em;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+  }
+
+  .text-stroke-thin {
+    -webkit-text-stroke-width: 6px;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
@@ -76,7 +82,7 @@
   }
   
   header {
-    @apply bg-[#4400ff] pt-8 flex justify-center items-center gap-2.5;
+    @apply bg-[#4400ff] p-3 lg:py-8 flex justify-center items-center gap-2.5;
   }
 
   main {
@@ -88,7 +94,7 @@
 
 @media (min-width:1024px) {
   main {
-    padding-left: calc(18rem + 2vw);
+    padding-left: calc(20rem + 2vw);
     padding-right: calc(var(--spacing) * 2 + 2vw);
   }
 }
@@ -129,3 +135,4 @@
 #backgroundR span:nth-child(n) {
   right: calc(10% * (n));
 }
+
