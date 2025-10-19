@@ -31,13 +31,13 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         <div className="col-span-1">{children}</div>
         <section id="bg" className="p-0">
           <div id="backgroundL">
-            {Array.from({ length: 15 }).map((_, i) => (
-              <span key={i} style={{ left: `${10 * (i + 1)}%` }}></span>
+            {Array.from({ length: 20 }).map((_, i) => (
+              <span key={i} style={{ left: `${18 * (i + 1)}%` }}></span>
             ))}
           </div>
           <div id="backgroundR">
-            {Array.from({ length: 15 }).map((_, i) => (
-              <span key={i} style={{ right: `${10 * (i + 1)}%` }}></span>
+            {Array.from({ length: 20 }).map((_, i) => (
+              <span key={i} style={{ right: `${18 * (i + 1)}%` }}></span>
             ))}
           </div>
         </section>

@@ -115,17 +115,25 @@ function scrollToTop() {
                     alt="CPT 2024"
                     fill
                     sizes="(max-width: 1024px) 100vw, 25vw"
-                    className="object-cover"
+                    className="object-cover "
                   />
 
-                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20">
-                    <p className="text-center">14/12/2024</p>
+                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20 hover-element">
+                    <p>14/12/2024</p>
                   </div>
 
-                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col p-8 gap-10">
+                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                    <div className="flex flex-col gap-3">
                       <p className="font-bold text-3xl">33rd</p>
-                      <p className="">Kings of the World</p>
+                      <p >Kings of the World</p>
+                      <p className="font-bold text-xl text-white">Tier 1</p>
+                    </div>
+                  </div>
+
+                  <div className="absolute inset-0 bg-black/75 hover-replace">
+                    <div className="flex flex-col gap-2">
+                      <p className="font-bold text-3xl">33rd</p>
+                      <p >Kings of the World<br/>14/12/2024</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
                   </div>
@@ -145,18 +153,25 @@ function scrollToTop() {
                     className="object-cover"
                   />
 
-                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20">
-                    <p className="text-center">17/5/2025</p>
+                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20 hover-element">
+                    <p>17/5/2025</p>
                   </div>
 
-                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col p-5 gap-10">
+                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                    <div className="flex flex-col gap-3">
                       <p className="font-bold text-3xl">25th</p>
                       <p className="">Brussels Challenge Major Edition</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
                   </div>
 
+                  <div className="absolute inset-0 bg-black/75 hover-replace">
+                    <div className="flex flex-col gap-2">
+                      <p className="font-bold text-3xl">25th</p>
+                      <p >Brussels Challenge Major Edition<br/>17/5/2025</p>
+                      <p className="font-bold text-xl text-white">Tier 1</p>
+                    </div>
+                  </div>
                 </div>
               </a>
               <a 
@@ -172,14 +187,22 @@ function scrollToTop() {
                     className="object-cover"
                   />
 
-                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10">
-                    <p className="text-center">11/09/2025</p>
+                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
+                    <p>11/09/2025</p>
                   </div>
 
-                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col p-8 gap-10">
+                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                    <div className="flex flex-col gap-3">
                       <p className="font-bold text-3xl">97th</p>
                       <p className="">Ultimate Fighting Arena</p>
+                      <p className="font-bold text-xl text-white">Tier 1</p>
+                    </div>
+                  </div>
+
+                  <div className="absolute inset-0 bg-black/75 hover-replace">
+                    <div className="flex flex-col gap-2">
+                      <p className="font-bold text-3xl">97th</p>
+                      <p >Ultimate Fighting Arena<br/>11/09/2025</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
                   </div>
@@ -199,14 +222,22 @@ function scrollToTop() {
                     className="object-cover"
                   />
 
-                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10">
-                    <p className="text-center">10/10/2025</p>
+                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
+                    <p>10/10/2025</p>
                   </div>
 
-                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col p-8 gap-10">
+                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                    <div className="flex flex-col gap-3">
                       <p className="font-bold text-3xl">33rd</p>
                       <p className="">Evo Nice</p>
+                      <p className="font-bold text-xl text-white">Tier 1</p>
+                    </div>
+                  </div>
+
+                  <div className="absolute inset-0 bg-black/75 hover-replace">
+                    <div className="flex flex-col gap-2">
+                      <p className="font-bold text-3xl">33rd</p>
+                      <p >Evo Nice<br/>10/10/2025</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
                   </div>

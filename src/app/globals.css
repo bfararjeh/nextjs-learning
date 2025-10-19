@@ -116,10 +116,6 @@
   transform-origin: top left; /* Adjust rotation pivot */
 }
 
-#backgroundL span:nth-child(n) {
-  left: calc(10% * (n));
-}
-
 #backgroundR span {
   z-index:-1;
   opacity:.5;
@@ -132,7 +128,22 @@
   transform-origin: top left; /* Adjust rotation pivot */
 }
 
-#backgroundR span:nth-child(n) {
-  right: calc(10% * (n));
+#backgroundR span:nth-child(n),
+#backgroundL span:nth-child(n) {
+  right: calc(20% * (n));
 }
 
+.hover-replace {
+  display: none;
+}
+
+@media (hover: none) {
+  .hover-replace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hover-element {
+    display: none;
+  }
+}
