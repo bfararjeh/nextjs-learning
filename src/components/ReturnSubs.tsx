@@ -13,8 +13,8 @@ export default function ReturnSubs() {
   }, []);
 
   return (
-    <p>
+    <span>
       {count !== null ? count.toLocaleString() : "Loading..."}
-    </p>
+    </span>
   );
 }

@@ -3,6 +3,7 @@
 :root {
   --background: #1a1a1a;
   --foreground: #ededed;
+  --spacing: 0.25rem
 }
 
 @font-face {
@@ -42,29 +43,32 @@
   }
   
   .image {
-    @apply max-h-full rounded-xl m-auto shadow-md;
+    @apply w-full h-auto rounded-xl m-auto shadow-md;
   }
 
   h1 {
-    @apply font-centgoth font-bold text-6xl text-center;
-    -webkit-text-stroke-width: 8px;
+    @apply font-centgoth font-bold text-4xl sm:text-4xl md:text-6xl text-center;
+    -webkit-text-stroke-width: 0.15em;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
   }
 
   h2 {
-    @apply font-centgoth font-bold text-8xl text-left;
-    -webkit-text-stroke-width: 12px;
+    @apply font-centgoth font-bold text-4xl sm:text-7xl md:text-8xl text-left;
+    -webkit-text-stroke-width: 0.15em;
     -webkit-text-stroke-color: black;
     paint-order: stroke fill;
+    padding-bottom: clamp(2rem, 5vw, 6rem);
   }
   
   p {
-    @apply font-centgoth text-xl text-center;
+    @apply font-centgoth text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl text-center;
   }
 
   section {
-    @apply flex flex-col justify-between py-30;
+    @apply flex flex-col justify-between;
+    padding-top: clamp(2rem, 5vw, 8rem);
+    padding-bottom: clamp(2rem, 5vw, 8rem);
   }
 
   body {
@@ -74,7 +78,21 @@
   header {
     @apply bg-[#4400ff] pt-8 flex justify-center items-center gap-2.5;
   }
+
+  main {
+    padding-inline: calc(var(--spacing) * 2 + 2vw);
+    margin-inline: auto;
+  }
 }
+
+
+@media (min-width:1024px) {
+  main {
+    padding-left: calc(18rem + 2vw);
+    padding-right: calc(var(--spacing) * 2 + 2vw);
+  }
+}
+  
 
 #sidebar {
   @apply font-centgoth font-bold text-2xl tracking-wide
