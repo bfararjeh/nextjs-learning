@@ -79,11 +79,9 @@ function scrollToTop() {
               height={1}
               className="image border-2 border-gray-200 mb-10 w-5xl"
             />
-
-              <h1>Your Favourite Player's Favourite Player</h1>
-              <p className="mt-10">Analytical, pragmatic, and zealous, Fararjeh is a competitor, content creator, and coach for Street Fighter 6.<br/><br/>I will be one of the best, I know that. I'm getting better and better each year I compete and as long as I maintain my attitude and discipline, it's just a matter of time. While competing, I also create and publish free intermediate to advanced level educational content. For those looking for something more personal, I also offer coaching; I can puzzle out your weaknesses before giving you a clear road to improving whether it be over a session or over a month with me as your personal trainer.</p>
+            <h1>Your Favourite Player's Favourite Player</h1>
+            <p className="mt-10">Analytical, pragmatic, and zealous, Fararjeh is a competitor, content creator, and coach for Street Fighter 6.<br/><br/>I will be one of the best, I know that. I'm getting better and better each year I compete and as long as I maintain my attitude and discipline, it's just a matter of time. While competing, I also create and publish free intermediate to advanced level educational content. For those looking for something more personal, I also offer coaching; I can puzzle out your weaknesses before giving you a clear road to improving whether it be over a session or over a month with me as your personal trainer.</p>
           </section>
-
           <section id="achievements">
             <h2 className="text-center 2xl:text-left">Achievements</h2>
             <div className="flex flex-col 2xl:flex-row">
@@ -95,12 +93,10 @@ function scrollToTop() {
                   className="object-cover image"
                 />
               </div>
-
               <div className="bg-site-bg-dim self-center w-[70%] rounded-b-2xl 2xl:rounded-bl-none 2xl:rounded-r-2xl">
                 <p className="p-6">Aside from catching the tail end of the 2024 season with Kings of the World, the 2025 season was my first official season as a competitor. I managed to travel to a handful of CPT and non-CPT events abroad and domestically, with consistent results.<br/><br/>I was also able to compete in the 2025 UK/Ireland World Warrior series; achieving a final standing of 26th within my region.</p>
               </div>
             </div>
-
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
               <a 
               href="https://www.start.gg/tournament/kings-of-the-world/event/street-fighter-6-capcom-pro-tour-2024/entrant/18531700"
@@ -243,16 +239,12 @@ function scrollToTop() {
               </a>
             </div>
           </section>
-
-
-
           <section id="coaching">
             <h2 className="text-center 2xl:text-right">Get Coaching</h2>
             <div className="flex flex-col 2xl:flex-row">
               <div className="bg-site-bg-dim self-center w-[70%] rounded-b-2xl 2xl:rounded-br-none 2xl:rounded-l-2xl 2xl:order-1 order-2">
-                <p className="p-6">Having been teaching for years with a professional background in teaching, my coaching is all about puzzling your biggest weaknesses, and then outlining a path for you to improve on them.<br/><br/> Whether you don't know your biggest weakness or think you do, my coaching is make you a stronger player, and you can take a look at some of my reviews here.</p>
+                <p className="p-6">With a professional background in teaching and years of experience, my coaching is all about puzzling your biggest weaknesses, and then outlining a path for you to improve on them.<br/><br/> Whether you don't know your biggest weakness or think you do, my coaching is make you a stronger player, and you can take a look at some of my reviews here.</p>
               </div>
-
               <div className="relative w-[85%] 2xl:w-1/2 rounded-xl aspect-square mx-auto 2xl:order-2 order-1">
                 <Image
                   src="/home/status.png"
@@ -262,9 +254,7 @@ function scrollToTop() {
                 />
               </div>
             </div>
-
             <div className="py-0 sm:py-2 md:py-5"></div>
-
             <div className="flex items-center w-full justify-center gap-2 sm:gap-5 md:gap-10">
               <button
                 onClick={handlePrev}
@@ -272,7 +262,6 @@ function scrollToTop() {
               >
                 <ChevronLeft className="w-full h-full" />
               </button>
-
               <div className="relative w-full h-[300px] sm:h-[325px] md:h-[350px] overflow-hidden flex items-center justify-center">
                 <AnimatePresence custom={direction} mode="wait">
                   <motion.div
@@ -291,7 +280,6 @@ function scrollToTop() {
                   </motion.div>
                 </AnimatePresence>
               </div>
-
               <button
                 onClick={handleNext}
                 className="bg-site-bg-dim hover:bg-neutral-950 rounded-full p-1 sm:p-2 md:p-3 transition w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
@@ -313,8 +301,6 @@ function scrollToTop() {
               ))}
             </div>
           </section>
-
-
           <section id="content">
             <h2 className="text-center 2xl:text-left">Content Creation</h2>
             <div className="flex flex-col 2xl:flex-row">
@@ -331,9 +317,7 @@ function scrollToTop() {
                 <p className="p-6">With around <ReturnSubs/> subscribers, what's a fighting game player without some content? From videos on advanced neutral mechanics to in-depth defensive options, it's all on YouTube for free.<br/><br/>If you need proof of quality then look no further, my video on neutral is the first result when you search up "SF6 Neutral" on YouTube, and it was even featured on the front page of EventHubs which you can read below.</p>
               </div>
             </div>
-
             <div className="py-5 sm:py-8 md:py-10"></div>
-
             <iframe
               src="https://www.eventhubs.com/news/2024/jul/31/how-demand-respect-sf6-gameplay/"
               sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
@@ -341,19 +325,13 @@ function scrollToTop() {
               title="How to demand respect with your play in Street Fighter 6"
               loading="lazy"
             ></iframe>
-
           </section>
-
-
-
-
           <section id="gallery" 
           className="pb-0"
           >
             <h2 className="text-center 2xl:text-right">Gallery</h2>
             <MasonryGallery images={galleryImages} />
           </section>
-
           <section id="return">
             <div className="flex justify-center">
               <button
