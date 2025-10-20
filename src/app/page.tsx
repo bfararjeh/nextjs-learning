@@ -81,11 +81,8 @@ function scrollToTop() {
             />
 
               <h1>Your Favourite Player's Favourite Player</h1>
-              <p className="mt-10">Analytical, pragmatic, and zealous, my name is Fararjeh, and I'm a competitor, content creator, and coach for Street Fighter 6.<br/><br/>Slowly carving my name in the stone of the UK greats, I'm on my way, getting better and better each year I compete all the while creating and publishing free intermediate to advanced level educational content. For those looking for something more personal, I also offer coaching; I can puzzle out your weaknesses before giving you a clear road to improving whether it be over a session or over a month with me as your personal trainer.</p>
-
+              <p className="mt-10">Analytical, pragmatic, and zealous, Fararjeh is a competitor, content creator, and coach for Street Fighter 6.<br/><br/>I will be one of the best, I know that. I'm getting better and better each year I compete and as long as I maintain my attitude and discipline, it's just a matter of time. While competing, I also create and publish free intermediate to advanced level educational content. For those looking for something more personal, I also offer coaching; I can puzzle out your weaknesses before giving you a clear road to improving whether it be over a session or over a month with me as your personal trainer.</p>
           </section>
-
-
 
           <section id="achievements">
             <h2 className="text-center 2xl:text-left">Achievements</h2>
