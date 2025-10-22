@@ -12,8 +12,8 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ images }) => {
           <Image
             src={src}
             alt={`Gallery ${idx}`}
-            width={500} // approximate width
-            height={500} // approximate height, Next.js preserves aspect ratio
+            width={500}
+            height={500}
             className="w-full h-auto rounded-lg"
             loading="lazy"
             quality={90}

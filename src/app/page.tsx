@@ -117,7 +117,7 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
                     <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">33rd</p>
+                      <p className="font-bold text-3xl">33rd/200</p>
                       <p >Kings of the World</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
@@ -125,9 +125,9 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/75 hover-replace">
                     <div className="flex flex-col gap-2">
-                      <p className="font-bold text-3xl">33rd</p>
+                      <p className="font-bold text-xl md:text-3xl">33rd/200</p>
                       <p >Kings of the World<br/>14/12/2024</p>
-                      <p className="font-bold text-xl text-white">Tier 1</p>
+                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
                     </div>
                   </div>
 
@@ -152,7 +152,7 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
                     <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">25th</p>
+                      <p className="font-bold text-3xl">25th/152</p>
                       <p className="">Brussels Challenge Major Edition</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
@@ -160,9 +160,9 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/75 hover-replace">
                     <div className="flex flex-col gap-2">
-                      <p className="font-bold text-3xl">25th</p>
+                      <p className="font-bold text-xl md:text-3xl">25th/152</p>
                       <p >Brussels Challenge Major Edition<br/>17/5/2025</p>
-                      <p className="font-bold text-xl text-white">Tier 1</p>
+                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
                     </div>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
                     <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">97th</p>
+                      <p className="font-bold text-3xl">97th/393</p>
                       <p className="">Ultimate Fighting Arena</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
@@ -194,9 +194,9 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/75 hover-replace">
                     <div className="flex flex-col gap-2">
-                      <p className="font-bold text-3xl">97th</p>
-                      <p >Ultimate Fighting Arena<br/>11/09/2025</p>
-                      <p className="font-bold text-xl text-white">Tier 1</p>
+                      <p className="font-bold text-xl md:text-3xl">97th/393</p>
+                      <p>Ultimate Fighting Arena<br/>11/09/2025</p>
+                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
                     </div>
                   </div>
 
@@ -221,7 +221,7 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
                     <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">33rd</p>
+                      <p className="font-bold text-3xl">33rd/1664</p>
                       <p className="">Evo Nice</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
@@ -229,9 +229,9 @@ function scrollToTop() {
 
                   <div className="absolute inset-0 bg-black/75 hover-replace">
                     <div className="flex flex-col gap-2">
-                      <p className="font-bold text-3xl">33rd</p>
+                      <p className="font-bold text-xl md:text-3xl">33rd/1664</p>
                       <p >Evo Nice<br/>10/10/2025</p>
-                      <p className="font-bold text-xl text-white">Tier 1</p>
+                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
                     </div>
                   </div>
 

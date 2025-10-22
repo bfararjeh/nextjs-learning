@@ -17,6 +17,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       <body className="min-h-screen">
         <BurgerMenu/>
         <InsertHeader/>
+
         <div className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
           <aside className="fixed h-screen hidden lg:flex flex-col lg:max-w-[15%] justify-center items-center">
             <nav className="flex flex-col gap-8 mb-[10rem] ml-20">
@@ -25,11 +26,14 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               <Link id="sidebar" href="#coaching" className="text-left">Coaching</Link>
               <Link id="sidebar" href="#content" className="text-left">Content</Link>
               <Link id="sidebar" href="#gallery" className="text-left">Gallery</Link>
+              <a id="sidebar" href="mailto:fararenough@gmail.com" className="text-left">Business Enquiries</a>
             </nav>
           </aside>
         </div>
+
         <div className="col-span-1">{children}</div>
-        <section id="bg" className="p-0">
+
+        <div>
           <div id="backgroundL">
             {Array.from({ length: 20 }).map((_, i) => (
               <span key={i} style={{ left: `${18 * (i + 1)}%` }}></span>
@@ -40,7 +44,8 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               <span key={i} style={{ right: `${18 * (i + 1)}%` }}></span>
             ))}
           </div>
-        </section>
+        </div>
+
         <InsertFooter/>
       </body>
     </html>
