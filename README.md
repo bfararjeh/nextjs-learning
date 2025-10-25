@@ -22,3 +22,22 @@ It's been approximately one month since I've begun this project. Below, I'll tal
 
 ## Conclusions
 Overall, I've come to learn the fundamentals of Next.jss. From developing the site to adding extra features such as smooth animations and stylised text/images. My goal for the coming weeks is to acquire a domain and have the site publically available.
+
+# Two Months In
+In about two months, I've taken my fledgling website and turned it into something I can utilise and be proud of.
+
+### Progress Made
+- Perfected and finalised aesthetic choices for the site, from page layout to fonts, images, information, etcetera.
+
+- Refactored my site to fit nicely in a grid layout for better scaling with different aspect ratios.
+
+- Made my site function flawlessly on any device, from mobile to PC, as well as enabling/disabling features such as hover elements on certain devices.
+
+### Technologies Learnt
+- I can confidently say I have a strong foundational understanding of React and Tailwind CSS.
+
+- I know/understand how to test a website on different aspect ratios and optimise them accordingly.
+  
+
+## Conclusions
+Overall, I am very happy with this project, and I can comfortably move onto the next project with the tools I've learnt under my belt.
