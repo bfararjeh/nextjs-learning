@@ -71,14 +71,17 @@ function scrollToTop() {
     <div>
       <main>
         <div className="max-w-[96rem] mx-auto">
-          <section id="about">
-            <Image
-              src="/home/showcase_1.png"
-              alt="showcase"
-              width={4000}
-              height={1}
-              className="image border-2 border-gray-200 mb-10 w-5xl"
-            />
+          <section id="hero" className="pt-10">
+            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-10">
+              <video
+              src="/home/trailer.mp4"
+              autoPlay
+              controls
+              loop
+              playsInline
+              />
+            </div>
+
             <h1>Your Favourite Player's Favourite Player</h1>
             <p className="mt-10">Analytical, pragmatic, and zealous, Fararjeh is a competitor, content creator, and coach for Street Fighter 6.<br/><br/>I will be one of the best, I know that: as long as I maintain my attitude and discipline, it's just a matter of time. While competing, I also create and publish free intermediate to advanced level educational content. For those looking for something more personal, I also offer coaching; I can puzzle out your weaknesses before giving you a clear road to improving whether it be over a session or over a month with me as your personal trainer.</p>
           </section>
