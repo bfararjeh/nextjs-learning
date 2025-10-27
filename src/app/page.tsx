@@ -76,6 +76,7 @@ function scrollToTop() {
               <video
               src="/home/trailer.mp4"
               autoPlay
+              muted
               controls
               loop
               playsInline
