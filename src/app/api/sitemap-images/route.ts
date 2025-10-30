@@ -1,7 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest } from "next/server";
 import { galleryImages } from "@/src/lib/gallery";
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: NextRequest) {
   const baseUrl = "https://fararjeh-fgc.com";
 
   const urls = galleryImages
@@ -26,6 +26,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     ${urls}
   </urlset>`;
 
-  res.setHeader("Content-Type", "application/xml");
-  res.status(200).send(sitemap);
+  return new Response(sitemap, {
+    headers: {
+      "Content-Type": "application/xml",
+    },
+  });
 }
