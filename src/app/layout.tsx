@@ -6,7 +6,7 @@ import InsertFooter from "../components/InsertFooter";
 import BurgerMenu from "../components/BurgerMenu";
 
 export const metadata: Metadata = {
-  title: "Fararjeh FGC",
+  title: "Fararjeh",
   description: "Fararjeh is a content creator, competitor, and coach for the game Street Fighter 6. Learn everything you need to know about him here!",
 };
 
