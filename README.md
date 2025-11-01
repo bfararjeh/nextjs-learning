@@ -1,3 +1,5 @@
+# Fararjeh FGC
+
 This is a Next.js project created for learning purposes. I'm using this project to both understand Next.js, React, and Tailwind CSS, as well as familiarise myself with web development concepts and HTML.
 
 # One Month In
@@ -20,9 +22,6 @@ It's been approximately one month since I've begun this project. Below, I'll tal
 - Testing, building, and deploying site builds with Next.js via Vercel.
   
 
-## Conclusions
-Overall, I've come to learn the fundamentals of Next.jss. From developing the site to adding extra features such as smooth animations and stylised text/images. My goal for the coming weeks is to acquire a domain and have the site publically available.
-
 # Two Months In
 In about two months, I've taken my fledgling website and turned it into something I can utilise and be proud of.
 
@@ -39,5 +38,5 @@ In about two months, I've taken my fledgling website and turned it into somethin
 - I know/understand how to test a website on different aspect ratios and optimise them accordingly.
   
 
-## Conclusions
-Overall, I am very happy with this project, and I can comfortably move onto the next project with the tools I've learnt under my belt.
+# To Conclude
+Overall, I am very happy with this project, and I can comfortably move onto the next project with the tools I've learnt under my belt. I will only return to this project to ammend/update information already existing on it; no further development will be taking place.
