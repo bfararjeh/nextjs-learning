@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Link from "next/link";
 import InsertHeader from "../components/InsertHeader";
@@ -47,6 +48,8 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         </div>
 
         <InsertFooter/>
+
+        <Analytics />
       </body>
     </html>
   );
