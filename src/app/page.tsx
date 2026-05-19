@@ -35,6 +35,7 @@ export default function Home() {
 
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0); // -1 for left +1 for right
+  const [showAllResults, setShowAllResults] = useState(false);
 
   const handlePrev = () => {
     setDirection(-1);
@@ -118,61 +119,26 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-              <a 
-              href="https://www.start.gg/tournament/kings-of-the-world/event/street-fighter-6-capcom-pro-tour-2024/entrant/18531700"
+              <a
+              href="https://www.start.gg/tournament/brussels-challenge-major-edition-2026/event/street-fighter-6-pc/entrant/22849471"
               target="_blank"
               rel="noopener noreferrer">
                 <div className="relative group aspect-square overflow-hidden rounded-2xl">
                   <Image
-                    src="/results/KOTW24.png"
-                    alt="CPT 2024"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 25vw"
-                    className="object-cover "
-                  />
-
-                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20 hover-element">
-                    <p>14/12/2024</p>
-                  </div>
-
-                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
-                    <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">33rd/200</p>
-                      <p >Kings of the World</p>
-                      <p className="font-bold text-xl text-white">Tier 1</p>
-                    </div>
-                  </div>
-
-                  <div className="absolute inset-0 bg-black/75 hover-replace">
-                    <div className="flex flex-col gap-2">
-                      <p className="font-bold text-xl md:text-3xl">33rd/200</p>
-                      <p >Kings of the World<br/>14/12/2024</p>
-                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
-                    </div>
-                  </div>
-
-                </div>
-              </a>
-              <a 
-              href="https://www.start.gg/tournament/brussels-challenge-major-edition-2025/event/street-fighter-6-pc-ewc-qualifiers/entrant/19831986"
-              target="_blank"
-              rel="noopener noreferrer"> 
-                <div className="relative group aspect-square overflow-hidden rounded-2xl">
-                  <Image
-                    src="/results/BSC25.png"
-                    alt="CPT 2024"
+                    src="/results/BSC26.png"
+                    alt="Brussels Challenge 2026"
                     fill
                     sizes="(max-width: 1024px) 100vw, 25vw"
                     className="object-cover"
                   />
 
-                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20 hover-element">
-                    <p>17/5/2025</p>
+                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
+                    <p>08/05/2026</p>
                   </div>
 
                   <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
                     <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">25th/152</p>
+                      <p className="font-bold text-3xl">13th/129</p>
                       <p className="">Brussels Challenge Major Edition</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
@@ -180,56 +146,57 @@ export default function Home() {
 
                   <div className="absolute inset-0 bg-black/75 hover-replace">
                     <div className="flex flex-col gap-2">
-                      <p className="font-bold text-xl md:text-3xl">25th/152</p>
-                      <p >Brussels Challenge Major Edition<br/>17/5/2025</p>
+                      <p className="font-bold text-xl md:text-3xl">13th/129</p>
+                      <p >Brussels Challenge Major Edition<br/>08/05/2026</p>
                       <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
                     </div>
                   </div>
+
                 </div>
               </a>
-              <a 
-              href="https://www.start.gg/tournament/ultimate-fighting-arena-2025-3/attendee/19095718"
+              <a
+              href="https://www.start.gg/tournament/road-to-ewc-26-dreamhack-birmingham/event/street-fighter-6-at-road-to-ewc-dh-birmingham/entrant/22858428"
               target="_blank"
-              rel="noopener noreferrer"> 
+              rel="noopener noreferrer">
                 <div className="relative group aspect-square overflow-hidden rounded-2xl">
                   <Image
-                    src="/results/UFA25.png"
-                    alt="CPT 2024"
+                    src="/results/DHB26.png"
+                    alt="Dreamhack Birmingham 2026"
                     fill
                     sizes="(max-width: 1024px) 100vw, 25vw"
                     className="object-cover"
                   />
 
                   <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
-                    <p>11/09/2025</p>
+                    <p>27/03/2026</p>
                   </div>
 
                   <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
                     <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">97th/393</p>
-                      <p className="">Ultimate Fighting Arena</p>
+                      <p className="font-bold text-3xl">49th/125</p>
+                      <p className="">Dreamhack Birmingham</p>
                       <p className="font-bold text-xl text-white">Tier 1</p>
                     </div>
                   </div>
 
                   <div className="absolute inset-0 bg-black/75 hover-replace">
                     <div className="flex flex-col gap-2">
-                      <p className="font-bold text-xl md:text-3xl">97th/393</p>
-                      <p>Ultimate Fighting Arena<br/>11/09/2025</p>
+                      <p className="font-bold text-xl md:text-3xl">49th/125</p>
+                      <p >Dreamhack Birmingham<br/>27/03/2026</p>
                       <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
                     </div>
                   </div>
 
                 </div>
               </a>
-              <a 
+              <a
               href="https://www.start.gg/tournament/evo-france-2025/event/street-fighter-6-ps5/entrant/21189173"
               target="_blank"
-              rel="noopener noreferrer"> 
+              rel="noopener noreferrer">
                 <div className="relative group aspect-square overflow-hidden rounded-2xl">
                   <Image
                     src="/results/EVO25.png"
-                    alt="CPT 2024"
+                    alt="EVO France 2025"
                     fill
                     sizes="(max-width: 1024px) 100vw, 25vw"
                     className="object-cover"
@@ -257,6 +224,122 @@ export default function Home() {
 
                 </div>
               </a>
+              <a
+              href="https://www.start.gg/tournament/ultimate-fighting-arena-2025-3/attendee/19095718"
+              target="_blank"
+              rel="noopener noreferrer">
+                <div className="relative group aspect-square overflow-hidden rounded-2xl">
+                  <Image
+                    src="/results/UFA25.png"
+                    alt="Ultimate Fighting Arena 2025"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 25vw"
+                    className="object-cover"
+                  />
+
+                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
+                    <p>11/09/2025</p>
+                  </div>
+
+                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                    <div className="flex flex-col gap-3">
+                      <p className="font-bold text-3xl">97th/393</p>
+                      <p className="">Ultimate Fighting Arena</p>
+                      <p className="font-bold text-xl text-white">Tier 1</p>
+                    </div>
+                  </div>
+
+                  <div className="absolute inset-0 bg-black/75 hover-replace">
+                    <div className="flex flex-col gap-2">
+                      <p className="font-bold text-xl md:text-3xl">97th/393</p>
+                      <p>Ultimate Fighting Arena<br/>11/09/2025</p>
+                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
+                    </div>
+                  </div>
+
+                </div>
+              </a>
+              {showAllResults && (
+                <>
+                  <a
+                  href="https://www.start.gg/tournament/brussels-challenge-major-edition-2025/event/street-fighter-6-pc-ewc-qualifiers/entrant/19831986"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                    <div className="relative group aspect-square overflow-hidden rounded-2xl">
+                      <Image
+                        src="/results/BSC25.png"
+                        alt="Brussels Challenge 2025"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 25vw"
+                        className="object-cover"
+                      />
+
+                      <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20 hover-element">
+                        <p>17/5/2025</p>
+                      </div>
+
+                      <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                        <div className="flex flex-col gap-3">
+                          <p className="font-bold text-3xl">25th/152</p>
+                          <p className="">Brussels Challenge Major Edition</p>
+                          <p className="font-bold text-xl text-white">Tier 1</p>
+                        </div>
+                      </div>
+
+                      <div className="absolute inset-0 bg-black/75 hover-replace">
+                        <div className="flex flex-col gap-2">
+                          <p className="font-bold text-xl md:text-3xl">25th/152</p>
+                          <p >Brussels Challenge Major Edition<br/>17/5/2025</p>
+                          <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                  href="https://www.start.gg/tournament/kings-of-the-world/event/street-fighter-6-capcom-pro-tour-2024/entrant/18531700"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                    <div className="relative group aspect-square overflow-hidden rounded-2xl">
+                      <Image
+                        src="/results/KOTW24.png"
+                        alt="Kings of the World 2024"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 25vw"
+                        className="object-cover"
+                      />
+
+                      <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/20 hover-element">
+                        <p>14/12/2024</p>
+                      </div>
+
+                      <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                        <div className="flex flex-col gap-3">
+                          <p className="font-bold text-3xl">33rd/200</p>
+                          <p>Kings of the World</p>
+                          <p className="font-bold text-xl text-white">Tier 1</p>
+                        </div>
+                      </div>
+
+                      <div className="absolute inset-0 bg-black/75 hover-replace">
+                        <div className="flex flex-col gap-2">
+                          <p className="font-bold text-xl md:text-3xl">33rd/200</p>
+                          <p>Kings of the World<br/>14/12/2024</p>
+                          <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </a>
+                </>
+              )}
+            </div>
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={() => setShowAllResults((prev) => !prev)}
+                id="toTopButton"
+              >
+                {showAllResults ? "View Less" : "View More"}
+              </button>
             </div>
           </section>
           <section id="coaching">
