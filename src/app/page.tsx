@@ -12,11 +12,6 @@ export default function Home() {
 
   const reviews = [
     {
-      name: "Narwen",
-      text: "Purchased the Month-long coaching Session. Fararjeh was amazing. He not only helped me improve on my current issues but also taught me how to improve on my own. Was 100% worth the purchase, and I will definitely be purchasing more coaching in the future. Best coach on metafy!",
-      date: "16/9/2025"
-    },
-    {
       name: "DadDeeUwU",
       text: "Fantastic time training with coach! We played and trained more than advertised. He went into a lots of details quick yet super understandable with demonstrations. It's surprising how I overlooked something that he made so so strong (fireballs). He made a very detailed note as well, can't really progress everything all at once, so his note is super helpful to keeps tracks of what need to be working on! Great deals for new and returning students as well. Highly recommend!",
       date: "23/8/2025"
@@ -30,6 +25,26 @@ export default function Home() {
       name: "Isai Vazquez",
       text: "he give me one of the best advices that i ever heard in this game, ts a good perso, charismatic, and takes the correct time to explain everything what you need :)",
       date: "30/08/2025"
+    },
+    {
+      name: "Narwen",
+      text: "Purchased the Month-long coaching Session. Fararjeh was amazing. He not only helped me improve on my current issues but also taught me how to improve on my own. Was 100% worth the purchase, and I will definitely be purchasing more coaching in the future. Best coach on metafy!",
+      date: "16/9/2025"
+    },
+    {
+      name: "Cloud57",
+      text: "Fararjeh is an amazing player and he analytically found my major weakness in just an ft10. He gave me a lot of tips and drill to work on, I'll get back for more in the future",
+      date: "29/11/2025"
+    },
+    {
+      name: "HitboxEnthusiast",
+      text: "Fararjeh is an incredible coach. I appreciate his vocal, yet patient, coaching style. He has tips and suggestions for each situation I find myself in during a ranked match, and he also keeps my skill level in mind. He also takes time to explain and fight against some more powerful strategies such as Sagat's medium punches. I am a 1500MR Ken main with about 500 hours of playtime in SF6 and still learned quite a bit in just 1 hour with Coach Fararjeh. I look forward to further coaching sessions with him.",
+      date: "28/5/2026"
+    },
+    {
+      name: "SebT",
+      text: "Top-tier coach. Great at answering any questions and diving into specific aspects of play that you need help with. Curates personalised resources tailored to help you improve as efficiently as possible. Definitely recommend them as a coach.",
+      date: "30/6/2026"
     },
   ];
 
