@@ -100,13 +100,11 @@ export default function Home() {
           </section>
           <section id="hero" className="py-12">
             <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-10 mx-auto">
-              <video
-              src="/home/trailer.mp4"
-              autoPlay
-              muted
-              controls
-              loop
-              playsInline
+              <iframe
+                src="https://www.youtube.com/embed/dLbNtj-6mng?autoplay=1&mute=1&loop=1&playlist=dLbNtj-6mng&controls=1&rel=0&modestbranding=1&playsinline=1"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                className="w-full h-full"
               />
             </div>
 
