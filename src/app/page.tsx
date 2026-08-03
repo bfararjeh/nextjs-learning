@@ -133,6 +133,41 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
               <a
+              href="https://www.start.gg/tournament/vsfighting-xiv/event/street-fighter-6/entrant/23881129"
+              target="_blank"
+              rel="noopener noreferrer">
+                <div className="relative group aspect-square overflow-hidden rounded-2xl">
+                  <Image
+                    src="/results/VSF26.png"
+                    alt="Versus Fighting XIV"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 25vw"
+                    className="object-cover"
+                  />
+
+                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
+                    <p>24/07/2026</p>
+                  </div>
+
+                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                    <div className="flex flex-col gap-3">
+                      <p className="font-bold text-3xl">17th/255</p>
+                      <p className="">Versus Fighting XIV</p>
+                      <p className="font-bold text-xl text-white">Tier 1</p>
+                    </div>
+                  </div>
+
+                  <div className="absolute inset-0 bg-black/75 hover-replace">
+                    <div className="flex flex-col gap-2">
+                      <p className="font-bold text-xl md:text-3xl">17th/255</p>
+                      <p >Versus Fighting XIV<br/>24/07/2026</p>
+                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
+                    </div>
+                  </div>
+
+                </div>
+              </a>
+              <a
               href="https://www.start.gg/tournament/brussels-challenge-major-edition-2026/event/street-fighter-6-pc/entrant/22849471"
               target="_blank"
               rel="noopener noreferrer">
