@@ -272,43 +272,43 @@ export default function Home() {
 
                 </div>
               </a>
-              <a
-              href="https://www.start.gg/tournament/ultimate-fighting-arena-2025-3/attendee/19095718"
-              target="_blank"
-              rel="noopener noreferrer">
-                <div className="relative group aspect-square overflow-hidden rounded-2xl">
-                  <Image
-                    src="/results/UFA25.png"
-                    alt="Ultimate Fighting Arena 2025"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 25vw"
-                    className="object-cover"
-                  />
-
-                  <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
-                    <p>11/09/2025</p>
-                  </div>
-
-                  <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
-                    <div className="flex flex-col gap-3">
-                      <p className="font-bold text-3xl">97th/393</p>
-                      <p className="">Ultimate Fighting Arena</p>
-                      <p className="font-bold text-xl text-white">Tier 1</p>
-                    </div>
-                  </div>
-
-                  <div className="absolute inset-0 bg-black/75 hover-replace">
-                    <div className="flex flex-col gap-2">
-                      <p className="font-bold text-xl md:text-3xl">97th/393</p>
-                      <p>Ultimate Fighting Arena<br/>11/09/2025</p>
-                      <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
-                    </div>
-                  </div>
-
-                </div>
-              </a>
               {showAllResults && (
                 <>
+                <a
+                href="https://www.start.gg/tournament/ultimate-fighting-arena-2025-3/attendee/19095718"
+                target="_blank"
+                rel="noopener noreferrer">
+                  <div className="relative group aspect-square overflow-hidden rounded-2xl">
+                    <Image
+                      src="/results/UFA25.png"
+                      alt="Ultimate Fighting Arena 2025"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 25vw"
+                      className="object-cover"
+                    />
+
+                    <div className="absolute inset-0 text-white p-5 flex justify-center items-end bg-black/10 hover-element">
+                      <p>11/09/2025</p>
+                    </div>
+
+                    <div className="absolute inset-0 bg-black/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover-element">
+                      <div className="flex flex-col gap-3">
+                        <p className="font-bold text-3xl">97th/393</p>
+                        <p className="">Ultimate Fighting Arena</p>
+                        <p className="font-bold text-xl text-white">Tier 1</p>
+                      </div>
+                    </div>
+
+                    <div className="absolute inset-0 bg-black/75 hover-replace">
+                      <div className="flex flex-col gap-2">
+                        <p className="font-bold text-xl md:text-3xl">97th/393</p>
+                        <p>Ultimate Fighting Arena<br/>11/09/2025</p>
+                        <p className="font-bold text-lg md:text-2xl text-white">Tier 1</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
                   <a
                   href="https://www.start.gg/tournament/brussels-challenge-major-edition-2025/event/street-fighter-6-pc-ewc-qualifiers/entrant/19831986"
                   target="_blank"
